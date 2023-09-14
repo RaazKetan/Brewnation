@@ -58,13 +58,7 @@
                   >
                 </li>
               </div>
-              <div class="overflow">
-                <li class="nav__list--item">
-                  <a class="header__nav__list--link" href="./sign_up_in.html"
-                    >Register</a
-                  >
-                </li>
-              </div>
+              
               <div class="overflow">
                 <li class="nav__list--item">
                   <a class="header__nav__list--link" href="./menu.html">Menu</a>
@@ -86,15 +80,7 @@
                   >
                 </li>
               </div>
-              <div class="overflow">
-                <li class="nav__list--item">
-                  <a
-                    class="header__nav__list--link drop-down-link"
-                    href="./sign_up_in.html"
-                    >Signout</a
-                  >
-                </li>
-              </div>
+              
             </ul>
           </div>
           <p class="nav__copyright">&copy; All copyrights reserved</p>
@@ -136,7 +122,7 @@
                   <span style="display: block; color: var(--grey-2)"
                     >About this Project:&nbsp;</span
                   >
-                  It was a full stack project which was made by Jappreet Singh.
+                  It was a project which was made by Ketan Raj.
                   The project was build just to brush up the skills with latest
                   styling techinques in the market.
                   <br />
@@ -223,7 +209,6 @@
         </div>
 
         <input type="checkbox" id="navi-toggle" class="navigation__checkbox" />
-        <!-- <div id="alert">{% include 'alert.html' %}</div> -->
 
         <div class="menu-container">
           <div class="menu-content">
@@ -236,10 +221,7 @@
               </h3>
               <div class="text-center">
                 <div class="menu-content__text">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Quidem esse libero sapiente nisi, nam consequuntur blanditiis
-                  officiis magni rem, harum voluptas earum tempore quae tempora
-                  voluptate consectetur sequi repellat quo?
+                  Our journey begins with the finest coffee beans sourced from around the world. We take great pride in selecting only the most exquisite, ethically-sourced beans, ensuring that each cup is a celebration of flavor, quality, and sustainability. From the lush coffee plantations to our carefully curated menu, every step is a testament to our passion for the perfect cup.
                 </div>
               </div>
             </div>
@@ -278,36 +260,23 @@
               <div class="coffee-footer"></div>
               <div class="ingredients">
                 <div class="ingredients--item">
-                  Money: <span>{{ money }}</span>
+                  Money: <span>$8</span>
                 </div>
                 <div class="ingredients--item">
-                  Water: <span>{{ water }}</span>
+                  Water: <span>1/4 cup</span>
                 </div>
                 <div class="ingredients--item">
-                  Milk: <span>{{ milk }}</span>
+                  Milk: <span>1/2 cup </span>
                 </div>
                 <div class="ingredients--item">
-                  Beans: <span>{{ beans }}</span>
+                  Beans: <span>20gms </span>
                 </div>
                 <div class="ingredients--item">
-                  Cups: <span>{{ cups }}</span>
+                  Cups: <span>1</span>
                 </div>
               </div>
             </div>
-            <div class="proceed_content">
-              <input
-                type="submit"
-                class="hero__content--text__button button-click check-out"
-                name="btn"
-                value="{{ buy.contents.label.text }}"
-              />
-              <input
-                type="submit"
-                class="hero__content--text__button button-click check-out"
-                name="btn"
-                value="{{ buy.checkout.label.text }}"
-              />
-            </div>
+           
           </div>
 
           <!-- Right hanging cards -->
@@ -340,20 +309,20 @@
                     <li>Water</li>
                   </ul>
                   <input
-                    type="submit"
+                    type="button"
                     class="card-add-btn hero__content--text__button button-click menu-button"
                     name="btn"
-                    value="{{ menu.add_es.label.text }}"
+                    value="+Espresso "
                   />
                   <input
-                    type="submit"
+                    type="button"
                     class="card-add-btn hero__content--text__button button-click menu-button"
                     name="btn"
-                    value="{{ menu.remove_es.label.text }}"
+                    value="+Espresso"
                   />
                   <div class="quantity">
                     <div class="quantity--item">
-                      Quantity: <span class="">{{ espresso }}</span>
+                      Quantity: <span class=""> </span>
                     </div>
                   </div>
                 </div>
@@ -388,13 +357,13 @@
                     <li>Steamed Milk</li>
                   </ul>
                   <input
-                    type="submit"
+                    type="button"
                     class="card-add-btn hero__content--text__button button-click menu-button"
                     name="btn"
                     value="{{ menu.add_la.label.text }}"
                   />
                   <input
-                    type="submit"
+                    type="button"
                     class="card-add-btn hero__content--text__button button-click menu-button"
                     name="btn"
                     value="{{ menu.remove_la.label.text }}"
@@ -439,20 +408,20 @@
                     <li>Milk Foam</li>
                   </ul>
                   <input
-                    type="submit"
+                    type="button"
                     class="card-add-btn hero__content--text__button button-click menu-button"
                     name="btn"
-                    value="{{ menu.add_ca.label.text }}"
+                    value="+Cappuccino"
                   />
                   <input
-                    type="submit"
+                    type="button"
                     class="card-add-btn hero__content--text__button button-click menu-button"
                     name="btn"
-                    value="{{ menu.remove_ca.label.text }}"
+                    value="+Cappuccino"
                   />
                   <div class="quantity">
                     <div class="quantity--item">
-                      Quantity: <span class="">{{ cappuccino }}</span>
+                      Quantity: <span class="">Quantity</span>
                     </div>
                   </div>
                 </div>
@@ -490,20 +459,20 @@
                     <li>Choco-Syrup</li>
                   </ul>
                   <input
-                    type="submit"
+                    type="button"
                     class="card-add-btn hero__content--text__button button-click menu-button"
                     name="btn"
-                    value="{{ menu.add_cb.label.text }}"
+                    value="+ColdBrew"
                   />
                   <input
-                    type="submit"
+                    type="button"
                     class="card-add-btn hero__content--text__button button-click menu-button"
                     name="btn"
-                    value="{{ menu.remove_cb.label.text }}"
+                    value="+ColdBrew"
                   />
                   <div class="quantity">
                     <div class="quantity--item">
-                      Quantity: <span class="">{{ coldbrew }}</span>
+                      Quantity: <span class="">Quantity </span>
                     </div>
                   </div>
                 </div>
@@ -539,20 +508,20 @@
                     <li>Water</li>
                   </ul>
                   <input
-                    type="submit"
+                    type="button"
                     class="card-add-btn hero__content--text__button button-click menu-button"
                     name="btn"
-                    value="{{ menu.add_am.label.text }}"
+                    value="+Americano "
                   />
                   <input
-                    type="submit"
+                    type="button"
                     class="card-add-btn hero__content--text__button button-click menu-button"
                     name="btn"
-                    value="{{ menu.remove_am.label.text }}"
+                    value="+Americano"
                   />
                   <div class="quantity">
                     <div class="quantity--item">
-                      Quantity: <span class="">{{ americano }}</span>
+                      Quantity: <span class=""></span>
                     </div>
                   </div>
                 </div>
@@ -589,20 +558,20 @@
                     <li>Milk Foam</li>
                   </ul>
                   <input
-                    type="submit"
+                    type="button"
                     class="card-add-btn hero__content--text__button button-click menu-button"
                     name="btn"
-                    value="{{ menu.add_ma.label.text }}"
+                    value="+Macchiato"
                   />
                   <input
-                    type="submit"
+                    type="button"
                     class="card-add-btn hero__content--text__button button-click menu-button"
                     name="btn"
-                    value="{{ menu.remove_ma.label.text }}"
+                    value="+Macchiato"
                   />
                   <div class="quantity">
                     <div class="quantity--item">
-                      Quantity: <span class="">{{ macchiato }}</span>
+                      Quantity: <span class=""></span>
                     </div>
                   </div>
                 </div>
@@ -639,20 +608,20 @@
                     <li>Milk Foam</li>
                   </ul>
                   <input
-                    type="submit"
+                    type="button"
                     class="card-add-btn hero__content--text__button button-click menu-button"
                     name="btn"
-                    value="{{ menu.add_fw.label.text }}"
+                    value="+FlatWhite"
                   />
                   <input
-                    type="submit"
+                    type="button"
                     class="card-add-btn hero__content--text__button button-click menu-button"
                     name="btn"
-                    value="{{ menu.remove_fw.label.text }}"
+                    value="+FlatWhite"
                   />
                   <div class="quantity">
                     <div class="quantity--item">
-                      Quantity: <span class="">{{ flatwhite }}</span>
+                      Quantity: <span class=""></span>
                     </div>
                   </div>
                 </div>
@@ -690,20 +659,20 @@
                     <li>Vanilla Gelato</li>
                   </ul>
                   <input
-                    type="submit"
+                    type="button"
                     class="card-add-btn hero__content--text__button button-click menu-button"
                     name="btn"
-                    value="{{ menu.add_af.label.text }}"
+                    value="+Affogato"
                   />
                   <input
-                    type="submit"
+                    type="button"
                     class="card-add-btn hero__content--text__button button-click menu-button"
                     name="btn"
-                    value="{{ menu.remove_af.label.text }}"
+                    value="+Affogato"
                   />
                   <div class="quantity">
                     <div class="quantity--item">
-                      Quantity: <span class="">{{ affogato }}</span>
+                      Quantity: <span class=""></span>
                     </div>
                   </div>
                 </div>
@@ -739,20 +708,20 @@
                     <li>Cardamom</li>
                   </ul>
                   <input
-                    type="submit"
+                    type="button"
                     class="card-add-btn hero__content--text__button button-click menu-button"
                     name="btn"
-                    value="{{ menu.add_te.label.text }}"
+                    value="+Tea"
                   />
                   <input
-                    type="submit"
+                    type="button"
                     class="card-add-btn hero__content--text__button button-click menu-button"
                     name="btn"
-                    value="{{ menu.remove_te.label.text }}"
+                    value="+Tea"
                   />
                   <div class="quantity">
                     <div class="quantity--item">
-                      Quantity: <span class="">{{ tea }}</span>
+                      Quantity: <span class=""></span>
                     </div>
                   </div>
                 </div>
@@ -791,20 +760,20 @@
                     <li>Choco Chips</li>
                   </ul>
                   <input
-                    type="submit"
+                    type="button"
                     class="card-add-btn hero__content--text__button button-click menu-button"
                     name="btn"
-                    value="{{ menu.add_cm.label.text }}"
+                    value="+Coffe Shake"
                   />
                   <input
-                    type="submit"
+                    type="button"
                     class="card-add-btn hero__content--text__button button-click menu-button"
                     name="btn"
-                    value="{{ menu.remove_cm.label.text }}"
+                    value="+Coffe Shake"
                   />
                   <div class="quantity">
                     <div class="quantity--item">
-                      Quantity: <span class="">{{ coffeemilkshake }}</span>
+                      Quantity: <span class=""></span>
                     </div>
                   </div>
                 </div>
@@ -842,20 +811,20 @@
                     <li>Milk Foam</li>
                   </ul>
                   <input
-                    type="submit"
+                    type="button"
                     class="card-add-btn hero__content--text__button button-click menu-button"
                     name="btn"
-                    value="{{ menu.add_cr.label.text }}"
+                    value="+Cafe Breve"
                   />
                   <input
-                    type="submit"
+                    type="button"
                     class="card-add-btn hero__content--text__button button-click menu-button"
                     name="btn"
-                    value="{{ menu.remove_cr.label.text }}"
+                    value="+Cafe Breve"
                   />
                   <div class="quantity">
                     <div class="quantity--item">
-                      Quantity: <span class="">{{ cafebreve }}</span>
+                      Quantity: <span class=""></span>
                     </div>
                   </div>
                 </div>
@@ -892,20 +861,20 @@
                     <li>Cocoa Powder</li>
                   </ul>
                   <input
-                    type="submit"
+                    type="button"
                     class="card-add-btn hero__content--text__button button-click menu-button"
                     name="btn"
-                    value="{{ menu.add_mo.label.text }}"
+                    value="+Mocha"
                   />
                   <input
-                    type="submit"
+                    type="button"
                     class="card-add-btn hero__content--text__button button-click menu-button"
                     name="btn"
-                    value="{{ menu.remove_mo.label.text }}"
+                    value="+Mocha"
                   />
                   <div class="quantity">
                     <div class="quantity--item">
-                      Quantity: <span class="">{{ mocha }}</span>
+                      Quantity: <span class=""></span>
                     </div>
                   </div>
                 </div>
@@ -933,21 +902,21 @@
             <div class="bug-fix">
               <span><ion-icon name="location-sharp"></ion-icon></span>
             </div>
-            18/9B Tilak Nagar, New Delhi-110018
+            Chandigarh
           </div>
 
           <div class="footer__contact--number">
             <div class="bug-fix">
               <span><ion-icon name="call"></ion-icon></span>
             </div>
-            +91 9999 040232
+            +91 99990120
           </div>
 
           <div class="footer__contact--email">
             <div class="bug-fix">
               <span><ion-icon name="mail"></ion-icon></span>
             </div>
-            jappreet16042002@gmail.com
+            21ketanraaz@gmail.com
           </div>
         </div>
 
