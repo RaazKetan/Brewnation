@@ -10,13 +10,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&family=Quicksand:wght@100;400;500;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&family=Quicksand:wght@100;400;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <title>About</title>
+    <title>Cart</title>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </head>
 
   <header class="header">
@@ -34,9 +43,9 @@
     </label>
   </header>
 
-  <body id="scrollbar" class="about-page">
+  <body id="scrollbar">
+    <!-- Header -->
     <input type="checkbox" id="navi-toggle" class="navigation__checkbox" />
-
     <div class="header__background--1">
       <div class="nav">
         <ul class="nav__list">
@@ -192,101 +201,65 @@
       </div>
     </div>
 
-    <div class="about-container">
-      <!-- Left portion -->
-      <div class="about-content">
-        <div class="about-content__header">
-          <h2 class="about-content__header--heading">
-            Who am <span>I</span> ?
-          </h2>
-          <h3 class="about-content__header--subheading">
-            And what do I do ...
+    <div class="cart-container">
+      <div class="cart-content">
+        <div class="cart-content__header">
+          <h2 class="cart-content__header--heading">Cart</h2>
+          <h3 class="cart-content__header--subheading">
+            Summary of your ordered items
           </h3>
-          <div class="about-content__text">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
-            esse libero sapiente nisi, nam consequuntur blanditiis officiis
-            magni rem, harum voluptas earum tempore quae tempora voluptate
-            consectetur sequi repellat quo?
+          <div class="cart-content__text">
+            As you reach the final billing cart section, we want to ensure that your coffee journey is as smooth as possible. Our checkout process is designed with simplicity and transparency in mind, making it effortless for you to complete your order.
           </div>
+
         </div>
       </div>
-
-      <!-- Right hanging cards -->
-      <div class="about-do--1">
-        <div href="" class="about-card about-card--1">
-          <img src="../static/img/what.png" class="about-card__image" alt="" />
-          <div class="about-card__overlay">
-            <div class="about-card__header">
-              <svg class="about-card__arc" xmlns="http://www.w3.org/2000/svg">
-                <path />
-              </svg>
-
-              <div class="about-card__header-text">
-                <h3 class="about-card__title about-card__title--item">
-                  What I do?
-                </h3>
-              </div>
-            </div>
-            <div class="about-card__details">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
-              nostrum animi provident ducimus consequuntur modi sequi molestiae
-              cum quam qui sapiente a consequatur sunt! Quae id veniam illo
-              cupiditate consectetur.
-            </div>
-          </div>
+      <div class="cart-do--1">
+        <div class="heading">
+          <div class="heading--main">Summary</div>
+          <div class="heading--sub">Cost</div>
         </div>
-      </div>
-
-      <div class="about-do--2">
-        <div href="" class="about-card about-card--2">
-          <img src="../static/img/how.png" class="about-card__image" alt="" />
-          <div class="about-card__overlay">
-            <div class="about-card__header">
-              <svg class="about-card__arc" xmlns="http://www.w3.org/2000/svg">
-                <path />
-              </svg>
-
-              <div class="about-card__header-text">
-                <h3 class="about-card__title about-card__title--item">
-                  How I do?
-                </h3>
+        <ul class="item">
+          <li class="item-list">
+            <div class="item__left">
+              <div class="item__left-name">Espresso</div>
+              <div class="item__left-price">
+                <span class="item__left-qty"
+                  >Quantity:&nbsp; * 1 
+                  
+                  </span
+                > = $ 2.50
               </div>
             </div>
-            <div class="about-card__details">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-              harum ipsum iure neque eum repudiandae illo architecto assumenda
-              dolorem modi ullam perferendis, blanditiis ex dolor deserunt at
-              corporis reprehenderit vero.
+            <div class="item__right">
+              $2.50
             </div>
-          </div>
+          </li>
+        </ul>
+      </div>
+      <div class="cart-do--2">
+        <div class="heading">
+          <div class="heading--main">Receipt</div>
         </div>
-      </div>
-      <div class="about-do--3">
-        <div href="" class="about-card about-card--3">
-          <img src="../static/img/next.png" class="about-card__image" alt="" />
-          <div class="about-card__overlay">
-            <div class="about-card__header">
-              <svg class="about-card__arc" xmlns="http://www.w3.org/2000/svg">
-                <path />
-              </svg>
-
-              <div class="about-card__header-text">
-                <h3 class="about-card__title about-card__title--item">
-                  What's next?
-                </h3>
-              </div>
-            </div>
-            <div class="about-card__details">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet est
-              pariatur similique tempora possimus architecto facilis repudiandae
-              quas eligendi saepe optio totam, molestiae quam laudantium ex
-              doloremque autem dolor natus?
-            </div>
-          </div>
+        <ul class="tax">
+          <li>Subtotal<span> $2.50</span></li>
+          <li>Items Bought<span> 1 units</span></li>
+          <li>Tax<span> $0.50</span></li>
+          <li>Transaction Type<span> Cash</span></li>
+          <li>Authorization<span> Approved</span></li>
+          <li>Payment Code<span> 2552810</span></li>
+          <li>Payment ID<span> 8569&nbsp;4231&nbsp;8678</span></li>
+        </ul>
+        <div class="total-cost">
+          <div class="total-cost--heading">Total</div>
+          <div class="total-cost--cost">$ <span>3.00 </span></div>
         </div>
       </div>
     </div>
+
+    <!-- Right hanging cards -->
   </body>
+
   <footer class="footer">
     <div class="footer__connect">
       <div class="footer__connect--logo">Caffeine 101</div>
