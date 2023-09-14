@@ -1,0 +1,177 @@
+.footer {
+  color: var(--off-white);
+  overflow: hidden;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  & > * {
+    position: relative;
+    z-index: 3;
+  }
+  @include respond(sm-tab) {
+    flex-flow: row wrap;
+  }
+
+  &::before {
+    content: "";
+    background-image: linear-gradient(
+        90deg,
+        rgba($black, 0.65),
+        rgba($black, 0.65)
+      ),
+      url(/static/img/footer-wallpaper.jpg);
+
+    background-size: 100%;
+    background-position: center;
+    background-repeat: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__connect {
+    flex: 0 0 33%;
+    padding: 2.4rem;
+    @include respond(sm-tab) {
+      flex-basis: 100%;
+      text-align: center;
+      order: 1;
+    }
+    &--logo {
+      font-size: 3.2rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: var(--off-white);
+      margin-bottom: 3.2rem;
+      @include respond(sm-tab) {
+        display: none;
+        visibility: hidden;
+      }
+    }
+
+    &--text {
+      hyphens: auto;
+      max-width: 30rem;
+      font-size: 1.2rem;
+      font-weight: 400;
+      line-height: 1.5;
+      letter-spacing: 0.8px;
+      @include respond(sm-tab) {
+        max-width: 75%;
+        margin: 0 auto;
+      }
+    }
+
+    &--copyright {
+      margin-top: 1.2rem;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      letter-spacing: 0.8px;
+    }
+  }
+  &__contact {
+    flex: 0 0 33%;
+    padding: 2.4rem;
+    @include respond(sm-tab) {
+      flex: 1 0 50%;
+    }
+
+    & > * {
+      span {
+        font-size: 2.4rem;
+        color: var(--brown-light);
+        stroke: var(--brown-light);
+        overflow: hidden;
+      }
+    }
+
+    & > * {
+      hyphens: auto;
+
+      font-size: 1.2rem;
+      font-weight: 400;
+      line-height: 1.5;
+      letter-spacing: 0.8px;
+      margin-bottom: 0.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1.4rem;
+      @include respond(sm-tab) {
+        justify-content: center;
+      }
+    }
+
+    &--heading {
+      font-size: 3.2rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: var(--off-white);
+      margin-bottom: 3.2rem;
+      text-transform: capitalize;
+    }
+  }
+  &__link {
+    flex: 0 0 33%;
+    padding: 2.4rem;
+    height: 100%;
+    @include respond(sm-tab) {
+      flex: 1 0 50%;
+      margin: 0 auto;
+      text-align: center;
+    }
+    @include respond(sm-mob) {
+      display: none;
+      visibility: none;
+    }
+
+    &-list {
+      display: grid;
+      grid-template-columns: 0.4fr 0.4fr;
+      row-gap: 0.8rem;
+      @include respond(sm-tab) {
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+      }
+      &--items {
+        hyphens: auto;
+
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0.8px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1.4rem;
+        @include respond(sm-tab) {
+          justify-content: center;
+        }
+      }
+    }
+
+    &--heading {
+      font-size: 3.2rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: var(--off-white);
+      margin-bottom: 3.2rem;
+      text-transform: capitalize;
+
+      &__icon {
+        height: 2.4rem;
+        width: 2.4rem;
+        fill: var(--brown-light);
+      }
+    }
+  }
+}
+
+.bug-fix {
+  height: 2.4rem;
+  width: 2.4rem;
+  margin-bottom: 0.8rem;
+}
